@@ -1,0 +1,11 @@
+PARA RODAR O REACTOTRON O DEVICE TEM QUE ESTAR CONECTADO VIA USB
+Logo após instalar app com run-android, vá em dev settings e configure ip e porta da maquina do project. Dê um reload, após reload se não aparecer nada (exclusividade da version 0.60 do RN), encerre o server, feche o app.
+Posteriormente abra antes de start o server. Verique se app está como deveria.
+Depois (react-native start) inicie project na machine server.
+
+Após todas as configurações do Reactotron conforme aulas, sem informar host no arquivo de config do mesmo, 
+faça o redirecionamento de portas conforme abaixo:
+
+$ ~/Android/Sdk/platform-tools/adb reverse tcp:9090 tcp:9090
+
+Após code acima dê um reload no app, com isto deve funcionar o Reactotron.
